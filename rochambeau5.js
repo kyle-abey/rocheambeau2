@@ -83,7 +83,6 @@ function displayGameResult(result){
     }
 
     updateScoreBoard();
-    updateMatch();
 }
 
 // Updates the score
@@ -103,7 +102,7 @@ function updateScoreBoard(){
     document.getElementById("ties").textContent = score[1];
 }
 
-function updateMatches()
+function updateMatchScore()
 {
     document.getElementById("playerWin").textContent = match[0];
     document.getElementById("computerWin").textContent = match[1];
@@ -119,6 +118,7 @@ function determineWinner() {
         updateMatch(1);
 return score = [0,0,0];
     }
+    updateMatchScore();
 }
 
 // The button elements
