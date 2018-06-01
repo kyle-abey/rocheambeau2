@@ -2,31 +2,31 @@
 <html lang="en">
 
     <head>
-        <title>Rochambeau</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    </head>
+    <title>Rochambeau</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
 
-    <body>
-        <div class="container">
-            <h1>Rock, Paper, Scissors Game</h1>
-            <p>Let's Play Rock, Paper Scissors! Press your choice and then press PLAY!</p>
-            <p>
-                <button type="button" class="btn btn-default" id="rock">Rock</button>
-                <button type="button" class="btn btn-default" id="paper">Paper</button>
-                <button type="button" class="btn btn-default" id="scissors">Scissors</button>
-                <button type="button" class="btn btn-default" id="lizard">Lizard</button>
-                <button type="button" class="btn btn-default" id="Spock">Spock</button>
-            </p>
-            <p></p>
-            <input type="button" value="Play" class="btn btn-primary" id="play">
-            <p></p>
-            <div id="result"></div>
-            <div id="scoreboard">
-              <table class="table">
+<body>
+    <div class="container">
+        <h1>Rock, Paper, Scissors Game</h1>
+        <p>Let's Play Rock, Paper Scissors! Press your choice and then press PLAY!</p>
+        <p>
+            <button type="button" class="btn btn-default" id="rock">Rock</button>
+            <button type="button" class="btn btn-default" id="paper">Paper</button>
+            <button type="button" class="btn btn-default" id="scissors">Scissors</button>
+            <button type="button" class="btn btn-default" id="lizard">Lizard</button>
+            <button type="button" class="btn btn-default" id="spock">Spock</button>
+        </p>
+        <p></p>
+        <input type="button" value="Play" class="btn btn-primary" id="play">
+        <p></p>
+        <div id="result"></div>
+        <div id="scoreboard">
+            <table class="table">
                 <tr>
                     <td>Wins:</td>
                     <td>Losses:</td>
@@ -37,9 +37,22 @@
                     <td id="losses">0</td>
                     <td id="ties">0</td>
                 </tr>
-              </table>
-            </div>
+                <tr>
+                    <td><h1>Match Winner: </h1></td>
+                    <td id=><h1 id="winner"></h1></td>
+
+                </tr>
+                <tr>
+                    <td>Player Matches won</td>
+                    <td>Computer Matches won</td>
+                </tr>
+                <tr>
+                    <td id="playerWin">0</td>
+                    <td id="computerWin">0</td>
+                </tr>
+            </table>
         </div>
-    </body>
-    <script src="rochambeau.js"></script>
+    </div>
+</body>
+<script src="rochambeau5.js"></script>
 </html>
